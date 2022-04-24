@@ -1,11 +1,9 @@
 import cv2
 
-frameWidth = 960
-frameHeight = 540
-cap = cv2.VideoCapture("resources/test_video.mp4")
+cap = cv2.VideoCapture("resources/test_video.mp4")      # VideoCapture yordamia videoni yuklaymiz
+
 while True:
-    success, img = cap.read()
-    img = cv2.resize(img, (frameWidth, frameHeight))
+    success, img = cap.read()   # Videoni ekranga chiqaramiz
     cv2.imshow("Result", img)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord('q'):   # Agar klaviaturada 'q' bosilsa video to'xtatiladi 
         break
