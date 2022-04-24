@@ -5,3 +5,4 @@ cv2.imshow("Gentra", img)  # yuklangan rasmni ekranga chiqarami
 
 cv2.waitKey(0)     # Dastur o'chib qolmasligi uchun waitKey(0) dan foydalanamiz
 
+
